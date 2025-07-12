@@ -1,0 +1,115 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Form Container */
+.form-container {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 450px;
+}
+
+/* Form heading */
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #0077cc;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.2);
+}
+
+/* Submit Button */
+button[type="submit"] {
+  width: 100%;
+  background-color: #0077cc;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+/* View Button */
+#viewStudentsBtn {
+  display: block;
+  margin: 20px auto 0;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #444;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 15px;
+  transition: background-color 0.3s;
+}
+
+#viewStudentsBtn:hover {
+  background-color: #222;
+}
+
+/* Response message */
+#responseMessage {
+  text-align: center;
+  margin-top: 10px;
+  color: green;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .form-container {
+    padding: 25px 20px;
+  }
+
+  button, #viewStudentsBtn {
+    font-size: 14px;
+  }
+}
